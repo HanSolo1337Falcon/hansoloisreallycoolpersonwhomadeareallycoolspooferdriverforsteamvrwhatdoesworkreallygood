@@ -1,0 +1,62 @@
+{
+	"jsonid": "input_profile",
+	"controller_type": "vrspoofer_controller",
+	"device_class": "TrackedDeviceClass_Controller",
+	"resource_root": "vrspoofer",
+	"driver_name": "vrspoofer",
+	"input_bindingui_mode": "controller_handed",
+	"should_show_binding_errors": false,
+	"input_bindingui_left": {
+		"image": "{vrspoofer}/icons/controller_left.svg"
+	},
+	"input_bindingui_right": {
+		"image": "{vrspoofer}/icons/controller_right.svg"
+	},
+	"input_source": {
+		"/input/system": {
+			"type": "button",
+			"binding_image_point": [ 45, 30 ],
+			"order": 1
+		},
+		"/input/a": {
+			"type": "button",
+			"binding_image_point": [ 60, 45 ],
+			"order": 2
+		},
+		"/input/b": {
+			"type": "button",
+			"binding_image_point": [ 60, 60 ],
+			"order": 3
+		},
+		"/input/trigger": {
+			"type": "trigger",
+			"click": true,
+			"value": true,
+			"binding_image_point": [ 30, 70 ],
+			"order": 4
+		},
+		"/input/grip": {
+			"type": "trigger",
+			"click": true,
+			"value": true,
+			"binding_image_point": [ 20, 90 ],
+			"order": 5
+		},
+		"/input/joystick": {
+			"type": "joystick",
+			"click": true,
+			"binding_image_point": [ 40, 40 ],
+			"order": 6
+		},
+		"/output/haptic": {
+			"type": "vibration",
+			"binding_image_point": [ 50, 100 ],
+			"order": 7
+		},
+		"/pose/raw": {
+			"type": "pose",
+			"binding_image_point": [ 50, 50 ]
+		}
+	},
+	"default_bindings": []
+}
